@@ -14,16 +14,18 @@ export default function Pokedex(){
             if(response.status >= 200 && response.status < 300) {
 
                     const { results } = response.data;
-                    let newpokemonData = [];
-                    results.forEach((pokemon, index) => {
-                        index++
-                        let pokemonObject = { 
-                            id: index,
-                            url: IMAGE_API_URL + index + '.png',
-                             name: pokemon.name,
+                     let newpokemonData = [];
+                     results.map((pokemon, index) => {
+                         index++
+                         let pokemonObject = { 
+                             id: index,
+                             url: IMAGE_API_URL + index + '.png',
+                              name: pokemon.name,
                         };
-                        newpokemonData.push(pokemonObject);
-                  });
+                         newpokemonData.push(pokemonObject);
+                   });
+                 
+                  
                   setPokemonData(newpokemonData);
                   setLoading(false);
             }

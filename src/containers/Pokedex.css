@@ -1,12 +1,13 @@
 .pokedex{
   background-color: black;
 }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the column width as needed */
-    grid-gap: 10px; /* Adjust the gap between grid items as needed */
-    margin-top: 10px;/* Add any other desired grid styles */
 
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the column width as needed */
+  grid-gap: 10px; /* Adjust the gap between grid items as needed */
+  margin-top: 10px;/* Add any other desired grid styles */
+
+}
   
   

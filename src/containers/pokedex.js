@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from 'react'
-/*import './Pokedex.css';*/
+//import './Pokedex.css';
 import axios from 'axios';
 import { POKEMON_API_URL, IMAGE_API_URL} from '../config'
 import { ClipLoader } from 'react-spinners';
